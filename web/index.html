@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Testovací úloha - Michal Vávra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Práce mi trvala do 7 hodin">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+
+
+<body>
+    <header>
+        <div>
+        <a class="menu" id="menu" onclick="myFunction(this)">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <img class="logo" src="../src/logo.svg">
+        <img class="search" src="../src/search.png">
+        </div>
+    </header>
+
+    <div id="side-menu">
+        <ul style="margin:0px;list-style-type: none;">
+         <li><a href="">Home</a></li>
+         <li><a href="">About us</a></li>
+         <li><a href="">Contact</a></li>
+         <li><a href="">Products</a></li>
+         <li><a href="">Partners</a></li>
+
+       </ul> 
+    </div>
+
+    <div class="socials" id="socials">
+        <img src="../src/facebook-f-brands.svg">
+        <img src="../src/twitter-brands.svg">
+        <img src="../src/instagram-brands.svg">
+        <img src="../src/share-alt-solid.svg">
+    </div>
+
+    <div class="articles">
+        <ul>
+            <li class="article"><span class="tag">Travel</span><a class="image-link" href=""><img class="image" src="../src/article1.jpg"></a><div class="info"><a href=""><h2>Etiam quis quam. Nemo enim<br>ipsam voluptatem quia</h2></a><span>May 25, 2048 / 9 min.</span></div></li>
+            <li><a href=""><img class="image" src="../src/space-station-moon-alt-duotone.svg"></a><div><a href=""><h2>Discover content<br>from different universe</h2></a></div></li>
+        </ul>
+        <ul>
+            <li class="small">
+                <div class="article"><span class="tag">Travel</span><a class="image-link" href=""><img class="image-small" src="../src/article2.jpg"></a><div class="info"><a href=""><h2>Etiam quis quam. Nemo enim<br>ipsam voluptatem quia</h2></a><span>May 25, 2048 / 9 min.</span></div></div>
+                <div class="article tech"><span class="tag">Tech</span><a class="image-link" href=""><img class="image-small" src="../src/article3.jpg"></a><div class="info"><a href=""><h2>Etiam quis quam. Nemo enim<br>ipsam voluptatem quia</h2></a><span>May 25, 2048 / 9 min.</span></div></div>
+            </li>
+            <li class="article"><span class="tag">Travel</span><a class="image-link" href=""><img class="image" src="../src/article4.jpg"></a><div class="info"><a href=""><h2>Etiam quis quam. Nemo enim<br>ipsam voluptatem quia</h2></a><span>May 25, 2048 / 9 min.</span></div></li>
+        </ul>
+        
+    </div>
+
+    <footer>
+        <p>All rights reserved. ©2048</p>
+        <img class="logo" src="../src/logo.svg">
+    </footer>
+    <script>
+        let countArticles = document.querySelectorAll('.article').length;
+        console.log("Pocet prispevku: "+countArticles); 
+        
+        
+
+
+
+
+function myFunction(x) {
+  x = document.getElementById("side-menu");
+  y = document.getElementById("socials");
+  var element = document.getElementById("menu");
+  element.classList.toggle("open");
+ 
+  if (x.style.left === "40px") {
+    x.style.left = "-130px";
+  } else {
+    x.style.left = "40px";
+  }
+
+  if (y.style.top === "370px") {
+    y.style.top = "230px";
+  } else {
+    y.style.top = "370px";
+  }
+}
+
+    </script>
+</body>
+</html>
